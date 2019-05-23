@@ -1,14 +1,15 @@
-# http_mutual_authentication
+# Http Mutual Authentication
 
-A new Flutter package.
+## Using
+    Optional params: `password` and `pathCertificate`
+    ```dart
+    HttpAuth httpAuth = new HttpAuthBuilder(
+              authPass: "password", pathCertificate: "assets/certificate.p12")
+          .build;
 
-## Getting Started
-
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+      httpAuth.getRequest("http://www.google.com").then((result){
+        HttpAuth.parseBody(result).then((resultString){
+          print("Results: $resultString");
+        });
+      }); //replace url
+    ```
