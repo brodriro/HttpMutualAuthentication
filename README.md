@@ -16,5 +16,5 @@ Optional params: `password` and `pathCertificate`
     HttpAuth.parseBody(result).then((resultString){
       print("Results: $resultString");
     });
-  }); 
+  });
 ```
