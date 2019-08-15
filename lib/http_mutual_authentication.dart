@@ -28,7 +28,6 @@ class HttpAuth {
   /// Constructor required [pathCertificate] and [authPass]
   HttpAuth({this.pathCertificate, this.authPass});
 
-
   /// Sets all headers to request
   setHeaders(String header, String value) {
     _headers.addAll({header: value});
