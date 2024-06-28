@@ -1,3 +1,7 @@
+## 1.0.0
+Update Dart v3.4.3
+Change validations
+
 ## 0.1.1
 Fix Format code
 
