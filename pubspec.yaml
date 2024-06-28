@@ -2,10 +2,10 @@ name: http_mutual_authentication
 description: Dart Http Mutual Authentication for Flutter, Multi-platform, HttpAuth.
 version: 0.1.1
 author: Brian Rodriguez<rzknairb@gmail.com>
-homepage: https://github.com/rzkbrian/HttpMutualAuthentication
+homepage: https://github.com/brodriro/HttpMutualAuthentication
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: "3.4.3"
 
 dependencies:
   flutter:
