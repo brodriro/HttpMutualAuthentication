@@ -5,7 +5,7 @@ void main() {
   /// sets [authPass] and [pathCertificate] for request
   HttpAuth httpAuth = new HttpAuthBuilder(
           authPass: "password", pathCertificate: "assets/certificate.p12")
-      .build;
+      .build();
 
   /// Replace your url
   httpAuth.getRequest("http://www.google.com").then((result){
